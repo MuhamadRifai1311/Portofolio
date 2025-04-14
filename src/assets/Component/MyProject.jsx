@@ -316,7 +316,7 @@ function MyProject() {
             >
               Click to Home
             </motion.h2>
-            <a href="/">
+            <a href="/Portofolio/">
               <motion.h1
                 initial={{ opacity: 0, x: -200 }}
                 whileInView={{ opacity: 1, x: 0 }}
