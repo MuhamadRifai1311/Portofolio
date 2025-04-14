@@ -588,7 +588,7 @@ function About() {
                   type: "tween",
                   ease: "easeInOut",
                 }}
-                href="/Portofolio/project"
+                href="/Portofolio/#/project"
               >
                 <h1 className="text-lg md:text-7xl font-medium mt-3  hover:underline whitespace-nowrap leading-none">
                   Next <FontAwesomeIcon icon={faCircleRight} />
