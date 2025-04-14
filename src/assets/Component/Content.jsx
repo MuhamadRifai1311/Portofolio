@@ -18,7 +18,7 @@ import Foto from "../img/pas_foto.jpeg";
 function Content() {
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/Portofolio/public/Muhamad Rifa’i (1).pdf";
+    link.href = "/Portofolio/Muhamad Rifa’i (1).pdf";
     link.download = "CV_MuhamadRifai.pdf";
     document.body.appendChild(link);
     link.click();
