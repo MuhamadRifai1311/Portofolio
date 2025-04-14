@@ -1,6 +1,10 @@
 import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "motion/react";
+import ds1 from '../img/project DS/image1.png';
+import ds2 from '../img/project DS/image2.png';
+// import ds3 from '../img/project DS/image3.png';
+import ds4 from '../img/project DS/pic1.png';
 
 function MyProject() {
   const scrollToSection = (id) => {
@@ -139,38 +143,38 @@ function MyProject() {
               viewport={{ once: false, amount: 0.2 }}
               className="relative w-full  aspect-square"
             >
-              <div className="absolute top-28 left-10 h-[40%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125 z-10">
+              <div className="absolute top-28 left-10 h-[40%]  aspect-video grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all ease duration-300 hover:scale-125 z-10">
                 <motion.div
                   variants={itemVariants}
                   className="w-full shadow-lg"
                 >
                   <img
                     className="object-cover"
-                    src="/src/assets/img/project DS/pic1.png"
+                    src={ds4}
                     alt=""
                   />
                 </motion.div>
               </div>
-              <div className="absolute top-12 sm:top-16 right-14 sm:right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125">
+              <div className="absolute top-12 sm:top-16 right-14 sm:right-28 h-[30%]  aspect-video grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all ease duration-300 hover:scale-125">
                 <motion.div
                   variants={itemVariants}
                   className="w-full shadow-lg"
                 >
                   <img
                     className="object-cover"
-                    src="/src/assets/img/project DS/image1.png"
+                    src={ds1}
                     alt=""
                   />
                 </motion.div>
               </div>
-              <div className="absolute bottom-32 right-20 h-[35%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125">
+              <div className="absolute bottom-32 right-20 h-[35%]  aspect-video grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all ease duration-300 hover:scale-125">
                 <motion.div
                   variants={itemVariants}
                   className="w-full  shadow-lg"
                 >
                   <img
                     className="object-cover"
-                    src="/src/assets/img/project DS/image2.png"
+                    src={ds2}
                     alt=""
                   />
                 </motion.div>
@@ -255,10 +259,10 @@ function MyProject() {
           }}
           className="w-h-screen mx-auto gap-4 px-5 sm:px-10 grid grid-cols-1 sm:grid-cols-2 mb-10 cursor-pointer"
         >
-          <a href="/project1" className="group">
+          <a href="/Portofolio/#/project1" className="group">
             <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#2C3E50] aspect-video overflow-hidden">
               <img
-                src="/src/assets/img/project DS/pic1.png"
+                src={ds4}
                 alt=""
                 className="absolute h-full w-full inset-0  transition-all duration-500 ease-in-out 
                  opacity-30 group-hover:opacity-100 scale-105 group-hover:scale-100"

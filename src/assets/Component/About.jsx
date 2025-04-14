@@ -164,7 +164,7 @@ function About() {
               className="flex items-center flex-col mb-5 mt-2 mx-6 pt-10"
             >
               <img
-                className="w-[75%] sm:w-[50%]  grayscale hover:grayscale-0 transition-all ease-in-out duration-300 "
+                className="w-[75%] sm:w-[50%]  grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all ease-in-out duration-300 "
                 src={Picture1}
                 alt=""
               />
@@ -498,12 +498,12 @@ function About() {
                   <div className="flex justify-center">
                     <div className="overflow-hidden flex gap-2 rounded-md ">
                       <img
-                        className="w-[50%] object-cover rounded-md transition-transform duration-300 hover:scale-110 grayscale hover:grayscale-0"
+                        className="w-[50%] object-cover rounded-md transition-transform duration-300 hover:scale-110 grayscale-0 sm:grayscale sm:hover:grayscale-0"
                         src={Imagekampus}
                         alt="Education"
                       />
                       <img
-                        className="w-[50%] object-cover rounded-md transition-transform duration-300 hover:scale-110 grayscale hover:grayscale-0"
+                        className="w-[50%] object-cover rounded-md transition-transform duration-300 hover:scale-110 grayscale-0 sm:grayscale sm:hover:grayscale-0"
                         src={Imagekampus}
                         alt="Education"
                       />

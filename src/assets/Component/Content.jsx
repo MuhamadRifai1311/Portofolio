@@ -18,7 +18,7 @@ import Foto from "../img/pas_foto.jpeg";
 function Content() {
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/public/Muhamad Rifa’i (1).pdf";
+    link.href = "/Portofolio/public/Muhamad Rifa’i (1).pdf";
     link.download = "CV_MuhamadRifai.pdf";
     document.body.appendChild(link);
     link.click();
@@ -171,7 +171,7 @@ function Content() {
                   <div className="w-60 h-60 sm:w-72 sm:h-96 overflow-hidden rounded-full shadow-lg">
                     <img
                       src={Foto}
-                      className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all ease-in-out duration-300"
+                      className="object-cover w-full h-full grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all ease-in-out duration-300"
                     />
                   </div>
                 </motion.div>
@@ -253,7 +253,7 @@ function Content() {
               }}
               className="flex items-center justify-center sm:justify-end sm:items-end"
             >
-              <div className="flex justify-center pl-4 grayscale hover:grayscale-0 transition-all duration-300 ease-in-out ">
+              <div className="flex justify-center pl-4 grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all duration-300 ease-in-out ">
                 <img
                   className="w-[60%]"
                   src={Picture1}
@@ -315,7 +315,7 @@ function Content() {
               }}
               className="flex items-center justify-center sm:justify-end sm:items-end"
             >
-              <div className="flex justify-center pl-4 grayscale hover:grayscale-0 transition-all duration-300 ease-in-out">
+              <div className="flex justify-center pl-4 grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all duration-300 ease-in-out">
                 <img
                   className="w-[60%]"
                   src={Laptop}
@@ -434,7 +434,7 @@ function Content() {
               }}
               className="flex items-center justify-center sm:justify-end sm:items-end"
             >
-              <div className="flex justify-center pl-4 grayscale hover:grayscale-0 transition-all duration-300 ease-in-out">
+              <div className="flex justify-center pl-4 grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all duration-300 ease-in-out">
                 <img className="w-[60%]" src={Picture1} />
               </div>
             </motion.div>

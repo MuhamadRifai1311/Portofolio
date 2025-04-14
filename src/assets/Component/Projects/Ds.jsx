@@ -1,3 +1,8 @@
+import ds1 from "../../img/project DS/image1.png";
+import ds2 from "../../img/project DS/image2.png";
+import ds3 from "../../img/project DS/image3.png";
+import ds4 from "../../img/project DS/pic1.png";
+
 function DS() {
   return (
     <>
@@ -44,65 +49,27 @@ function DS() {
           </div>
         </div>
       </div>
-      <div className="mx-auto grid py-10 px-2 sm:p-20 w-full ">
-        <div className="carousel w-full h-[250px] md:h-[500px] rounded-xl shadow-2xl">
-          <div id="slide1" className="carousel-item relative w-full">
-            <img
-              src="/src/assets/img/project DS/pic1.png"
-              className="w-full"
-            />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide4" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide2" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          <div id="slide2" className="carousel-item relative w-full">
-            <img
-              src="/src/assets/img/project DS/image2.png"
-              className="w-full"
-            />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide3" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          <div id="slide3" className="carousel-item relative w-full">
-            <img
-              src="/src/assets/img/project DS/image3.png"
-              className="w-full"
-            />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide4" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          <div id="slide4" className="carousel-item relative w-full">
-            <img
-              src="/src/assets/img/project DS/image1.png"
-              className="w-full"
-            />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide1" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-        </div>
+      <div className="mx-auto grid gap-8 py-10 px-2 sm:p-20 w-full">
+        <img
+          src={ds4}
+          className="w-full rounded-xl shadow-2xl object-cover"
+          alt="Dunia Sandang 1"
+        />
+        <img
+          src={ds2}
+          className="w-full rounded-xl shadow-2xl object-cover"
+          alt="Dunia Sandang 2"
+        />
+        <img
+          src={ds3}
+          className="w-full rounded-xl shadow-2xl object-cover"
+          alt="Dunia Sandang 3"
+        />
+        <img
+          src={ds1}
+          className="w-full rounded-xl shadow-2xl object-cover"
+          alt="Dunia Sandang 4"
+        />
       </div>
     </>
   );
