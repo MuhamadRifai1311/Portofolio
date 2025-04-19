@@ -1,9 +1,9 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./assets/Component/Header";
-import About from "./assets/Component/About";
-import MyProject from "./assets/Component/MyProject";
+import Header from "./assets/component/Header";
+import About from "./assets/component/About";
+import MyProject from "./assets/component/MyProject";
 import Content from "./assets/Component/content";
-import ScrollToTop from "./assets/Component/scrollToTop";
+import ScrollToTop from "./assets/component/scrollToTop";
 import DS from "./assets/Component/Projects/Ds";
 
 function App() {
