@@ -4,7 +4,7 @@ import About from "./assets/Component/About";
 import MyProject from "./assets/Component/MyProject";
 import Content from "./assets/Component/Content";
 import ScrollToTop from "./assets/Component/ScrollToTop";
-import DS from "./assets/Component/Projects/DS";
+import DS from "./assets/Component/Projects/Ds";
 
 function App() {
   return (
