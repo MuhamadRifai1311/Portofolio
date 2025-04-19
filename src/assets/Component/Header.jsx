@@ -1,11 +1,9 @@
 // import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/index.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
-
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -43,9 +41,7 @@ function Header() {
         </div>
 
         <div className="absolute left-16 top-2 font-bold">Muhamad Rifai</div>
-        
       </div>
-      
     </>
   );
 }
