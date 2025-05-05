@@ -80,6 +80,7 @@ function About() {
       if (target) observer.unobserve(target);
     };
   });
+  // []
 
   return (
     <>
@@ -381,20 +382,45 @@ function About() {
 
           <div className="mt-16 w-full">
             <div className="flex justify-center items-center">
-              <h1 className="text-xl sm:text-2xl font-bold mt-3">Sertifikat</h1>
+              <motion.h1
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.7,
+                type: "tween",
+                ease: "easeInOut",
+              }} 
+              className="text-xl sm:text-2xl font-bold mt-3">Sertifikat</motion.h1>
             </div>
+
             <div className="pt-10 flex flex-col gap-3 w-auto">
-              <div className="w-full flex flex-col sm:flex-row justify-around items-center">
+              <motion.div  
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.7,
+                type: "tween",
+                ease: "easeInOut",
+              }} 
+              className="w-full flex flex-col sm:flex-row justify-around items-center">
                 {Dicoding.map((img, index) => (
                   <img
-                    key={index}
-                    src={img}
-                    className="w-[75%] sm:w-[20%] pb-2 sm:gap-0 cursor-pointer transition-transform duration-300 hover:scale-110"
-                    onClick={() => setPreviewImg(img)}
+                  key={index}
+                  src={img}
+                  className="w-[75%] sm:w-[20%] pb-2 sm:gap-0 cursor-pointer transition-transform duration-300 hover:scale-110"
+                  onClick={() => setPreviewImg(img)}
                   />
                 ))}
-              </div>
-              <div className="w-full flex flex-col sm:flex-row justify-around items-center">
+              </motion.div>
+              <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.7,
+                type: "tween",
+                ease: "easeInOut",
+              }}  
+              className="w-full flex flex-col sm:flex-row justify-around items-center">
                 {MySkill.map((img, index) => (
                   <img
                     key={index}
@@ -403,7 +429,7 @@ function About() {
                     onClick={() => setPreviewImg(img)}
                   />
                 ))}
-              </div>
+              </motion.div>
             </div>
           </div>
           {/* modal Preview */}
