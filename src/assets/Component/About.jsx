@@ -79,8 +79,8 @@ function About() {
     return () => {
       if (target) observer.unobserve(target);
     };
-  });
-  // []
+  },[]);
+  
 
   return (
     <>
