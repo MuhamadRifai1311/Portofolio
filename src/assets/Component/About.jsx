@@ -6,7 +6,19 @@ import { faCircleRight, faPalette } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import "../Styles/index.css";
+import Dicoding1 from "../img/sertifikat/dicoding/Belajar Back-End Pemula dengan JavaScript_page-0001.jpg";
+import Dicoding2 from "../img/sertifikat/dicoding/Belajar Dasar AI_page-0001.jpg";
+import Dicoding3 from "../img/sertifikat/dicoding/idcamp-x-dicoding-live-2-automation-fast-track-your-career-with-uipath-and-meet-mvp-uipath-certificate (1)_page-0001.jpg";
+import Dicoding4 from "../img/sertifikat/dicoding/sertifikat_course_256_4444143_221024101406_page-0001.jpg";
+import Myskil1 from "../img/sertifikat/myskill/API Introduction_page-0001.jpg";
+import Myskil2 from "../img/sertifikat/myskill/Back-End Development Introduction_page-0001.jpg";
+import Myskil3 from "../img/sertifikat/myskill/FROND-END DEVELOPMENT INTRODUCTION_page-0001.jpg";
+import Myskil4 from "../img/sertifikat/myskill/internet-introduction_page-0001.jpg";
+
 function About() {
+  const Dicoding = [Dicoding1, Dicoding2, Dicoding3, Dicoding4];
+  const MySkill = [Myskil1, Myskil2, Myskil3, Myskil4];
+  const [previewImg, setPreviewImg] = useState(null);
   const scrollRef = useRef(null);
 
   const scrollToSection = () => {
@@ -35,16 +47,16 @@ function About() {
 
   const text = `“I believe, big dreams start from small steps. And every project, every mistake, is part of my journey to the best version of myself.”`;
 
-
-
   const [displayedChars, setDisplayedChars] = useState([]);
   const containerRef = useRef(null);
 
   // Observer untuk memulai ulang animasi setiap kali elemen terlihat
   useEffect(() => {
+    let hasAnimated = false;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !hasAnimated) {
+          hasAnimated = true;
           // Reset typing animasi
           setDisplayedChars([]);
           let i = 0;
@@ -366,6 +378,47 @@ function About() {
               </p>
             </motion.div>
           </div>
+
+          <div className="mt-16 w-full">
+            <div className="flex justify-center items-center">
+              <h1 className="text-xl sm:text-2xl font-bold mt-3">Sertifikat</h1>
+            </div>
+            <div className="pt-10 flex flex-col gap-3 w-auto">
+              <div className="w-full flex flex-col sm:flex-row justify-around items-center">
+                {Dicoding.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    className="w-[75%] sm:w-[20%] pb-2 sm:gap-0 cursor-pointer transition-transform duration-300 hover:scale-110"
+                    onClick={() => setPreviewImg(img)}
+                  />
+                ))}
+              </div>
+              <div className="w-full flex flex-col sm:flex-row justify-around items-center">
+                {MySkill.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    className="w-[75%] sm:w-[20%] pb-2 sm:gap-2 cursor-pointer transition-transform duration-300 hover:scale-110"
+                    onClick={() => setPreviewImg(img)}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+          {/* modal Preview */}
+          {previewImg && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50"
+              onClick={() => setPreviewImg(null)}
+            >
+              <img
+                src={previewImg}
+                alt="Preview"
+                className="max-w-[90%] max-h-[90%] rounded-lg"
+              />
+            </div>
+          )}
           <div className="mt-16 flex flex-col justify-start items-center w-full pl-10">
             <div className="flex justify-center items-start flex-col my-5 self-start">
               <motion.div
