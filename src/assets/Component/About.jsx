@@ -441,7 +441,7 @@ function About() {
               <img
                 src={previewImg}
                 alt="Preview"
-                className="max-w-[90%] max-h-[90%] rounded-lg"
+                className="max-w-[50%] max-h-[50%] sm:max-w-[90%] sm:max-h-[90%] rounded-lg"
               />
             </div>
           )}

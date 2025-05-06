@@ -1,10 +1,10 @@
 import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "motion/react";
-import ds1 from '../img/project DS/image1.png';
-import ds2 from '../img/project DS/image2.png';
-// import ds3 from '../img/project DS/image3.png';
-import ds4 from '../img/project DS/pic1.png';
+import ds1 from "../img/project DS/image1.png";
+import ds2 from "../img/project DS/image2.png";
+import ds4 from "../img/project DS/pic1.png";
+import utilityOne from "../img/project/UtilityOne.png";
 
 function MyProject() {
   const scrollToSection = (id) => {
@@ -37,8 +37,7 @@ function MyProject() {
       },
     },
   };
-  
-  
+
   return (
     <>
       <div className="relative h-full pt-28 pb-5 ">
@@ -148,11 +147,7 @@ function MyProject() {
                   variants={itemVariants}
                   className="w-full shadow-lg"
                 >
-                  <img
-                    className="object-cover"
-                    src={ds4}
-                    alt=""
-                  />
+                  <img className="object-cover" src={ds4} alt="" />
                 </motion.div>
               </div>
               <div className="absolute top-12 sm:top-16 right-14 sm:right-28 h-[30%]  aspect-video grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all ease duration-300 hover:scale-125">
@@ -160,11 +155,7 @@ function MyProject() {
                   variants={itemVariants}
                   className="w-full shadow-lg"
                 >
-                  <img
-                    className="object-cover"
-                    src={ds1}
-                    alt=""
-                  />
+                  <img className="object-cover" src={ds1} alt="" />
                 </motion.div>
               </div>
               <div className="absolute bottom-32 right-20 h-[35%]  aspect-video grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all ease duration-300 hover:scale-125">
@@ -172,11 +163,7 @@ function MyProject() {
                   variants={itemVariants}
                   className="w-full  shadow-lg"
                 >
-                  <img
-                    className="object-cover"
-                    src={ds2}
-                    alt=""
-                  />
+                  <img className="object-cover" src={ds2} alt="" />
                 </motion.div>
               </div>
             </motion.div>
@@ -268,7 +255,7 @@ function MyProject() {
                  opacity-30 group-hover:opacity-100 scale-105 group-hover:scale-100"
               />
 
-              <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-0 z-10"></div>
+              <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-0 z-10"></div>
 
               <div className="absolute top-0 left-0 bg-[#18BC9C] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
                 <p className="text-xs sm:text-base">2024</p>
@@ -305,6 +292,51 @@ function MyProject() {
               </div>
             </div>
           </a>
+          <a href="/Portofolio/#/project2" className="group">
+            <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#2C3E50] aspect-video overflow-hidden">
+              <img
+                src={utilityOne}
+                alt=""
+                className="absolute h-full w-full inset-0  transition-all duration-500 ease-in-out 
+                 opacity-30 group-hover:opacity-100 scale-105 group-hover:scale-100"
+              />
+
+              <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-0 z-10"></div>
+
+              <div className="absolute top-0 left-0 bg-[#18BC9C] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+                <p className="text-xs sm:text-base">2025</p>
+              </div>
+
+              <div className="z-20 text-center text-[#F5F5F5] px-5 transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+                <h1 className="text-xs sm:text-2xl font-bold mb-2 sm:mb-3">
+                  Utility One
+                </h1>
+                <p className="mb-4 text-xs sm:text-lg">
+                  Aplikasi mobile ini dibuat untuk memenuhi tugas Ujikom dan
+                  menampilkan fitur login, register, kalkulator, tasbih digital,
+                  grid view, list view, serta halaman kontak yang datanya
+                  diambil dari API...
+                </p>
+                <div className="flex justify-center flex-wrap gap-2">
+                  {[
+                    "Dart",
+                    "Flutter",
+                    "HTTP",
+                    "Lottie",
+                    "Animated Text",
+                    "Qr Code Generator"
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-[#18BC9C] px-3 py-1 text-xs sm:text-sm rounded"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </a>
         </motion.div>
         <div className="flex justify-center items-center flex-col mt-5 overflow-hidden">
           <div className="flex justify-center items-center flex-col mt-5 self-center min-h-[50vh] border-b-2 min-w-[80vw] ">
@@ -329,7 +361,7 @@ function MyProject() {
                   type: "tween",
                   ease: "easeInOut",
                 }}
-                className="text-lg md:text-7xl font-medium mt-3  hover:underline whitespace-nowrap leading-none"
+                className="text-lg md:text-7xl font-medium mt-3 hover:underline whitespace-nowrap leading-none"
               >
                 Back <FontAwesomeIcon icon={faCircleRight} />
               </motion.h1>
