@@ -79,7 +79,7 @@ function UtilityOne() {
         </div>
         <div className="relative mx-auto flex justify-center items-center py-10 px-2 sm:p-20 w-full">
           <img src={phone} alt="" className="w-[500px] sm:w-[600px]" />
-          <div className="absolute top-[72px] sm:top-[130px] left-50 w-[149px] h-[307px] sm:w-[229px] sm:h-[495px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="absolute top-[72px] sm:top-[130px] left-50 w-[149px] h-[307px] sm:w-[229px] sm:h-[495px] rounded-3xl overflow-hidden shadow-lg">
             <Slider {...sliderSettings}>
               {imageAll.map((img, index) => (
                 <img
