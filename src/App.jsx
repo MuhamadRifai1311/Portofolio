@@ -12,7 +12,7 @@ function App() {
     <>
       <Router>
         <div
-          className="min-h-auto text-[#2C3E50] bg-[#F5F5F5]"
+          className="max-w-md sm:max-w-full text-[#2C3E50] bg-[#F5F5F5]"
           style={{ fontFamily: "'Open Sans', sans-serif" }}
         >
           <Header />
