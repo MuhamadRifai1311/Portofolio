@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <>
-      <div className="sticky top-0 h-12 flex items-center px-6 z-50 backdrop-blur-sm">
+      <div className="fixed top-0 h-12 flex items-center px-6 z-50 backdrop-blur-sm w-full">
         <div>
           {showBackButtonProject.includes(location.pathname) ? (
             <button onClick={() => navigate("/project")}>
