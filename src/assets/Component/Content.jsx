@@ -171,7 +171,7 @@ function Content() {
                   <div className="w-60 h-60 sm:w-72 sm:h-96 overflow-hidden rounded-full shadow-lg">
                     <img
                       src={Foto}
-                      className="object-cover w-full h-full grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all ease-in-out duration-300"
+                      className="object-cover w-full h-full  sm:hover:grayscale-0 transition-all ease-in-out duration-300"
                     />
                   </div>
                 </motion.div>
@@ -190,11 +190,10 @@ function Content() {
                 <li key={menu.id}>
                   <button
                     onClick={() => scrollToSection(menu.id)}
-                    className={`transition duration-300 ${
-                      activeSection === menu.id
-                        ? "border-b-2 border-[#18BC9C] text-[#18BC9C]"
-                        : "text-[#F5F5F5]"
-                    }`}
+                    className={`transition duration-300 ${activeSection === menu.id
+                      ? "border-b-2 border-[#18BC9C] text-[#18BC9C]"
+                      : "text-[#F5F5F5]"
+                      }`}
                   >
                     <FontAwesomeIcon icon={menu.icon} className="w-5 h-5" />
                   </button>

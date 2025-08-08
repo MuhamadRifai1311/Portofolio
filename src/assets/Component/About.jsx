@@ -235,7 +235,7 @@ function About() {
                     memberikan solusi berkualitas tinggi.
                   </p>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                   <div className="flex flex-col items-center gap-2">
                     <svg
                       className="w-12 h-12"
@@ -259,17 +259,7 @@ function About() {
                       <p className="text-xs sm:text-lg">Pengembangan web</p>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <FontAwesomeIcon icon={faPalette} className="w-12 h-12" />
-                    <div className="font-medium">
-                      <p
-                        className="
-                      text-xs sm:text-lg"
-                      >
-                        Desain
-                      </p>
-                    </div>
-                  </div>
+
                   <div className="flex flex-col items-center gap-2">
                     <svg
                       className="w-12 h-12"
@@ -289,35 +279,6 @@ function About() {
                     </svg>
                     <div className="font-medium">
                       <p className="text-xs sm:text-lg">REST API</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <svg
-                      className="w-12 h-12"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <rect
-                        x="5"
-                        y="2"
-                        width="14"
-                        height="20"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="12" x2="12" y1="18" y2="18"></line>
-                    </svg>
-                    <div className="font-medium">
-                      <p className="text-xs sm:text-lg">
-                        Pengembangan Aplikasi{" "}
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -343,15 +304,10 @@ function About() {
                 <span className="font-bold">CSS</span> {"| "}
                 <span>Javascript</span> {"| "}
                 <span>PHP</span> {"| "}
-                <span className="font-bold">C++</span> {"| "}
-                <span>Dart</span> {"| "}
-                <span className="font-bold">Bootstrap</span> {"| "}
                 <span className="font-bold">React</span> {"| "}
                 <span className="font-bold">MySQL</span> {"| "}
                 <span className="font-bold">Laravel</span> {"| "}
-                <span>Flutter</span> {"| "}
                 <span className="font-bold">TailwindCSS</span> {"| "}
-                <span>Firebase</span> {"| "}
               </p>
             </motion.div>
             <motion.div
@@ -369,12 +325,8 @@ function About() {
               </h2>
               <p className="text-center tracking-widest md:px-5">
                 <span className="font-bold">Visual Studio Code</span> {"| "}
-                <span className="font-bold">Android Studio</span> {"| "}
-                <span className="font-bold">Figma</span> {"| "}
-                <span className="font-bold">Navicat</span> {"| "}
-                <span className="font-bold">DevC++</span> {"| "}
-                <span>Netbeans</span> {"| "}
-                <span>Firebase</span> {"| "}
+                <span className="font-bold">Laragon</span>{" | "}
+                <span className="font-bold">Ngrok</span>
               </p>
             </motion.div>
           </div>

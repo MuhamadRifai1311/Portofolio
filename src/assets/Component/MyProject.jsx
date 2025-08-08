@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import ds1 from "../img/project DS/image1.png";
 import ds2 from "../img/project DS/image2.png";
 import ds4 from "../img/project DS/pic1.png";
-import utilityOne from "../img/project/UtilityOne.png";
+import sajiSenja from "../img/project/sajiSenja.png";
 
 function MyProject() {
   const scrollToSection = (id) => {
@@ -279,7 +279,6 @@ function MyProject() {
                     "UIKit",
                     "Laravel",
                     "MySql",
-                    "Figma",
                   ].map((tech) => (
                     <span
                       key={tech}
@@ -295,7 +294,7 @@ function MyProject() {
           <a href="/Portofolio/#/project2" className="group">
             <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#2C3E50] aspect-video overflow-hidden">
               <img
-                src={utilityOne}
+                src={sajiSenja}
                 alt=""
                 className="absolute h-full w-full inset-0  transition-all duration-500 ease-in-out 
                  opacity-30 group-hover:opacity-100 scale-105 group-hover:scale-100"
@@ -309,22 +308,24 @@ function MyProject() {
 
               <div className="z-20 text-center text-[#F5F5F5] px-5 transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
                 <h1 className="text-xs sm:text-2xl font-bold mb-2 sm:mb-3">
-                  Utility One
+                  Simple Point Of Sale
                 </h1>
                 <p className="mb-4 text-xs sm:text-lg">
-                  Aplikasi mobile ini dibuat untuk memenuhi tugas Ujikom dan
-                  menampilkan fitur login, register, kalkulator, tasbih digital,
-                  grid view, list view, serta halaman kontak yang datanya
-                  diambil dari API...
+                  Saji Senja adalah aplikasi Point of Sale
+                  berbasis web yang dirancang untuk mempermudah
+                  proses penjualan dan pengelolaan produk . Melalui
+                  dashboard interaktif, pengguna dapat memantau jumlah produk ...
                 </p>
                 <div className="flex justify-center flex-wrap gap-2">
                   {[
-                    "Dart",
-                    "Flutter",
-                    "HTTP",
-                    "Lottie",
-                    "Animated Text",
-                    "Qr Code Generator"
+                    "HTML",
+                    "JS",
+                    "Tailwind",
+                    "DaisyUi",
+                    "PHP",
+                    "Laravel",
+                    "Ngrok",
+                    "Midtrans",
                   ].map((tech) => (
                     <span
                       key={tech}
