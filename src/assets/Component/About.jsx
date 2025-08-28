@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Styles/index.css";
 import Picture1 from "../img/Picture1.jpg";
 import Imagekampus from "../img/Imagekampus.jpeg";
-import { faCircleRight, faPalette } from "@fortawesome/free-solid-svg-icons";
+import { faCircleRight, } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import "../Styles/index.css";

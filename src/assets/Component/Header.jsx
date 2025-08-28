@@ -8,7 +8,7 @@ function Header() {
   const navigate = useNavigate();
 
   const showBackButtonOn = ["/about", "/project"];
-  const showBackButtonProject = ["/project1", "/project2"];
+  const showBackButtonProject = ["/project1", "/project2", "/project3"];
 
   // const [isOpen, setIsOpen] = useState(false);
 

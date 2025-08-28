@@ -5,6 +5,7 @@ import ds1 from "../img/project DS/image1.png";
 import ds2 from "../img/project DS/image2.png";
 import ds4 from "../img/project DS/pic1.png";
 import sajiSenja from "../img/project/sajiSenja.png";
+import bookingHotel from "../img/bookingHotel/Dashboard User.png";
 
 function MyProject() {
   const scrollToSection = (id) => {
@@ -291,6 +292,7 @@ function MyProject() {
               </div>
             </div>
           </a>
+          {/* project 2 */}
           <a href="/Portofolio/#/project2" className="group">
             <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#2C3E50] aspect-video overflow-hidden">
               <img
@@ -326,6 +328,51 @@ function MyProject() {
                     "Laravel",
                     "Ngrok",
                     "Midtrans",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-[#18BC9C] px-3 py-1 text-xs sm:text-sm rounded"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </a>
+          {/* project 3 */}
+          <a href="/Portofolio/#/project3" className="group">
+            <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#2C3E50] aspect-video overflow-hidden">
+              <img
+                src={bookingHotel}
+                alt=""
+                className="absolute h-full w-full inset-0  transition-all duration-500 ease-in-out 
+                 opacity-30 group-hover:opacity-100 scale-105 group-hover:scale-100"
+              />
+
+              <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-0 z-10"></div>
+
+              <div className="absolute top-0 left-0 bg-[#18BC9C] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+                <p className="text-xs sm:text-base">2025</p>
+              </div>
+
+              <div className="z-20 text-center text-[#F5F5F5] px-5 transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+                <h1 className="text-xs sm:text-2xl font-bold mb-2 sm:mb-3">
+                  Booking Hotel
+                </h1>
+                <p className="mb-4 text-xs sm:text-lg">
+                  Aplikasi Booking Hotel adalah sebuah sistem pemesanan kamar hotel berbasis web yang dirancang dengan...
+                </p>
+                <div className="flex justify-center flex-wrap gap-2">
+                  {[
+                    "HTML",
+                    "JS",
+                    "Tailwind",
+                    "DaisyUi",
+                    "Laravel",
+                    "Ngrok",
+                    "Midtrans",
+                    "OAuth",
                   ].map((tech) => (
                     <span
                       key={tech}

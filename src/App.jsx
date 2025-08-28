@@ -6,6 +6,7 @@ import Content from "./assets/Component/Content";
 import ScrollToTop from "./assets/Component/ScrollToTop";
 import DS from "./assets/Component/Projects/Ds";
 import UtilityOne from "./assets/Component/Projects/UtilityOne";
+import BookingHotel from "./assets/Component/Projects/BookingHotel";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<MyProject />} />
             <Route path="/project1" element={<DS />} />
-            <Route path="/project2" element={<UtilityOne/> }/>
+            <Route path="/project2" element={<UtilityOne />} />
+            <Route path="/project3" element={<BookingHotel />} />
           </Routes>
         </div>
       </Router>
