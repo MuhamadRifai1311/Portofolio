@@ -42,7 +42,7 @@ function MyProject() {
   return (
     <>
       <div className="relative h-full pt-28 pb-5 ">
-        <div className="text-center space-y-3 pb-64">
+        <div className="text-center space-y-3 py-24 pb-64">
           <motion.h2
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ function MyProject() {
               stiffness: 50,
               damping: 8,
             }}
-            className="h-1 w-24 bg-[#18BC9C] border-none rounded mx-auto"
+            className="h-1 w-24 bg-[#14274E] border-none rounded mx-auto"
           ></motion.div>
           <motion.p
             initial={{ opacity: 0, y: -100 }}
@@ -92,7 +92,7 @@ function MyProject() {
           >
             <button
               onClick={() => scrollToSection("Scroll")}
-              className="p-3 text-sm rounded-xl bg-[#18BC9C] text-[#2C3E50]  hover:bg-[#2C3E50] transition duration-500  hover:text-[#18BC9C]"
+              className="p-3 text-sm rounded-xl bg-[#14274E] text-[#9BA4B4]  hover:bg-[#9BA4B4] transition duration-500  hover:text-[#14274E]"
             >
               Scroll Down
             </button>
@@ -108,7 +108,7 @@ function MyProject() {
                 type: "tween",
                 ease: "easeInOut",
               }}
-              className="h-1 w-20 bg-[#18BC9C] border-none rounded ml-20 mb-2"
+              className="h-1 w-20 bg-[#14274E] border-none rounded ml-20 mb-2"
             ></motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -118,7 +118,7 @@ function MyProject() {
                 type: "tween",
                 ease: "easeInOut",
               }}
-              className="h-1 w-20 bg-[#18BC9C] border-none rounded ml-14"
+              className="h-1 w-20 bg-[#14274E] border-none rounded ml-14"
             ></motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -211,7 +211,7 @@ function MyProject() {
                 type: "tween",
                 ease: "easeInOut",
               }}
-              className="h-1 w-20 bg-[#18BC9C] border-none rounded ml-20 mb-2"
+              className="h-1 w-20 bg-[#14274E] border-none rounded ml-20 mb-2"
             ></motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -221,7 +221,7 @@ function MyProject() {
                 type: "tween",
                 ease: "easeInOut",
               }}
-              className="h-1 w-20 bg-[#18BC9C] border-none rounded ml-14"
+              className="h-1 w-20 bg-[#14274E] border-none rounded ml-14"
             ></motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -247,10 +247,11 @@ function MyProject() {
           }}
           className="w-h-screen mx-auto gap-4 px-5 sm:px-10 grid grid-cols-1 sm:grid-cols-2 mb-10 cursor-pointer"
         >
-          <a href="/Portofolio/#/project1" className="group">
-            <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#2C3E50] aspect-video overflow-hidden">
+          {/* project 3*/}
+          <a href="/Portofolio/#/project3" className="group">
+            <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#9BA4B4] aspect-video overflow-hidden">
               <img
-                src={ds4}
+                src={bookingHotel}
                 alt=""
                 className="absolute h-full w-full inset-0  transition-all duration-500 ease-in-out 
                  opacity-30 group-hover:opacity-100 scale-105 group-hover:scale-100"
@@ -258,32 +259,31 @@ function MyProject() {
 
               <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-0 z-10"></div>
 
-              <div className="absolute top-0 left-0 bg-[#18BC9C] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
-                <p className="text-xs sm:text-base">2024</p>
+              <div className="absolute top-0 left-0 bg-[#14274E] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+                <p className="text-xs sm:text-base text-white">2025</p>
               </div>
 
               <div className="z-20 text-center text-[#F5F5F5] px-5 transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
-                <h1 className="text-xs sm:text-2xl font-bold mb-2 sm:mb-3">
-                  Webiste SIERPIN Dunia Sandang
+                <h1 className="text-xs sm:text-2xl font-bold mb-2 sm:mb-3 ">
+                  Booking Hotel
                 </h1>
                 <p className="mb-4 text-xs sm:text-lg">
-                  Situs web Dunia Sandang Pratama merupakan platform E-Commerce
-                  yang dibangun menggunakan Laravel, dengan dukungan MySQL untuk
-                  pengelolaan basis data, serta perancang...
+                  Aplikasi Booking Hotel adalah sebuah sistem pemesanan kamar hotel berbasis web yang dirancang dengan...
                 </p>
                 <div className="flex justify-center flex-wrap gap-2">
                   {[
                     "HTML",
-                    "CSS",
                     "JS",
-                    "PHP",
-                    "UIKit",
+                    "Tailwind",
+                    "DaisyUi",
                     "Laravel",
-                    "MySql",
+                    "Ngrok",
+                    "Midtrans",
+                    "OAuth",
                   ].map((tech) => (
                     <span
                       key={tech}
-                      className="bg-[#18BC9C] px-3 py-1 text-xs sm:text-sm rounded"
+                      className="bg-[#14274E] px-3 py-1 text-xs sm:text-sm rounded"
                     >
                       {tech}
                     </span>
@@ -294,7 +294,7 @@ function MyProject() {
           </a>
           {/* project 2 */}
           <a href="/Portofolio/#/project2" className="group">
-            <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#2C3E50] aspect-video overflow-hidden">
+            <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#9BA4B4] aspect-video overflow-hidden">
               <img
                 src={sajiSenja}
                 alt=""
@@ -304,8 +304,8 @@ function MyProject() {
 
               <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-0 z-10"></div>
 
-              <div className="absolute top-0 left-0 bg-[#18BC9C] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
-                <p className="text-xs sm:text-base">2025</p>
+              <div className="absolute top-0 left-0 bg-[#14274E] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+                <p className="text-xs sm:text-base text-white">2025</p>
               </div>
 
               <div className="z-20 text-center text-[#F5F5F5] px-5 transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
@@ -331,7 +331,7 @@ function MyProject() {
                   ].map((tech) => (
                     <span
                       key={tech}
-                      className="bg-[#18BC9C] px-3 py-1 text-xs sm:text-sm rounded"
+                      className="bg-[#14274E] px-3 py-1 text-xs sm:text-sm rounded"
                     >
                       {tech}
                     </span>
@@ -340,11 +340,11 @@ function MyProject() {
               </div>
             </div>
           </a>
-          {/* project 3 */}
-          <a href="/Portofolio/#/project3" className="group">
-            <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#2C3E50] aspect-video overflow-hidden">
+          {/* Project 1 */}
+          <a href="/Portofolio/#/project1" className="group">
+            <div className="relative flex justify-center items-center flex-col mb-5 w-full h-auto bg-[#9BA4B4] aspect-video overflow-hidden">
               <img
-                src={bookingHotel}
+                src={ds4}
                 alt=""
                 className="absolute h-full w-full inset-0  transition-all duration-500 ease-in-out 
                  opacity-30 group-hover:opacity-100 scale-105 group-hover:scale-100"
@@ -352,31 +352,32 @@ function MyProject() {
 
               <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-0 z-10"></div>
 
-              <div className="absolute top-0 left-0 bg-[#18BC9C] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
-                <p className="text-xs sm:text-base">2025</p>
+              <div className="absolute top-0 left-0 bg-[#14274E] px-3 py-1 z-20 text-sm font-medium transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+                <p className="text-xs sm:text-base text-white">2024</p>
               </div>
 
               <div className="z-20 text-center text-[#F5F5F5] px-5 transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
                 <h1 className="text-xs sm:text-2xl font-bold mb-2 sm:mb-3">
-                  Booking Hotel
+                  Webiste SIERPIN Dunia Sandang
                 </h1>
                 <p className="mb-4 text-xs sm:text-lg">
-                  Aplikasi Booking Hotel adalah sebuah sistem pemesanan kamar hotel berbasis web yang dirancang dengan...
+                  Situs web Dunia Sandang Pratama merupakan platform E-Commerce
+                  yang dibangun menggunakan Laravel, dengan dukungan MySQL untuk
+                  pengelolaan basis data, serta perancang...
                 </p>
                 <div className="flex justify-center flex-wrap gap-2">
                   {[
                     "HTML",
+                    "CSS",
                     "JS",
-                    "Tailwind",
-                    "DaisyUi",
+                    "PHP",
+                    "UIKit",
                     "Laravel",
-                    "Ngrok",
-                    "Midtrans",
-                    "OAuth",
+                    "MySql",
                   ].map((tech) => (
                     <span
                       key={tech}
-                      className="bg-[#18BC9C] px-3 py-1 text-xs sm:text-sm rounded"
+                      className="bg-[#14274E] px-3 py-1 text-xs sm:text-sm rounded"
                     >
                       {tech}
                     </span>
@@ -385,6 +386,9 @@ function MyProject() {
               </div>
             </div>
           </a>
+
+          {/* project 3 */}
+
         </motion.div>
         <div className="flex justify-center items-center flex-col mt-5 overflow-hidden">
           <div className="flex justify-center items-center flex-col mt-5 self-center min-h-[50vh] border-b-2 min-w-[80vw] ">

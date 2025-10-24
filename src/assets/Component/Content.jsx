@@ -81,7 +81,8 @@ function Content() {
   return (
     <>
       <div id="home" className="min-w-auto">
-        <div className="pb-14 pt-10">
+        {/* content */}
+        <div className="py-20">
           <div className="flex flex-col-reverse sm:grid sm:grid-cols-3 items-center mx-auto w-5/6 py-5">
             <div className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start">
               <motion.div
@@ -142,13 +143,13 @@ function Content() {
                 <div className="flex justify-start items-start gap-3 pt-5">
                   <button
                     onClick={downloadPDF}
-                    className="p-2 rounded-xl bg-[#18BC9C] text-[#2C3E50]  hover:bg-[#2C3E50] transition duration-500  hover:text-[#18BC9C] "
+                    className="p-2 rounded-box bg-[#9BA4B4] text-[#14274E]  hover:bg-[#14274E] transition duration-500  hover:text-[#9BA4B4] "
                   >
                     Download CV
                   </button>
                   <button
                     onClick={() => scrollToSection("contact")}
-                    className="p-2 border-2 rounded-xl  bg-[#2C3E50] text-[#18BC9C]  hover:bg-[#18BC9C] transition duration-500  hover:text-[#2C3E50]"
+                    className="p-2 border-2 rounded-box  bg-[#14274E] text-[#9BA4B4]  hover:bg-[#9BA4B4] transition duration-500  hover:text-[#14274E]"
                   >
                     Contact Me
                   </button>
@@ -179,7 +180,7 @@ function Content() {
             </div>
           </div>
 
-          <div className="fixed w-auto h-auto bg-[#2C3E50] left-0 top-44 p-3 rounded-r-3xl hidden sm:flex">
+          <div className="fixed w-auto h-auto bg-[#14274E] left-0 top-44 p-3 rounded-r-3xl hidden sm:flex">
             <ul className="flex flex-col gap-7  pt-5 pb-5">
               {[
                 { id: "home", icon: faHouse },
@@ -191,7 +192,7 @@ function Content() {
                   <button
                     onClick={() => scrollToSection(menu.id)}
                     className={`transition duration-300 ${activeSection === menu.id
-                      ? "border-b-2 border-[#18BC9C] text-[#18BC9C]"
+                      ? "border-b-2 border-[#9BA4B4] text-[#9BA4B4]"
                       : "text-[#F5F5F5]"
                       }`}
                   >
@@ -203,7 +204,7 @@ function Content() {
           </div>
         </div>
         {/* About */}
-        <div id="about" className="pt-10 pb-14 w-full">
+        <div id="about" className="py-20 w-full">
           <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 w-[90%] mx-auto">
             <motion.div
               variants={containerVariants}
@@ -221,11 +222,11 @@ function Content() {
               </motion.h1>
               <motion.div
                 variants={itemVariants}
-                className="h-1 w-16 bg-[#18BC9C] border-none rounded mb-2"
+                className="h-1 w-16 bg-[#9BA4B4] border-none rounded mb-2"
               ></motion.div>
               <motion.div
                 variants={itemVariants}
-                className="h-1 w-16 bg-[#18BC9C] border-none rounded ml-14"
+                className="h-1 w-16 bg-[#9BA4B4] border-none rounded ml-14"
               ></motion.div>
               <motion.p variants={itemVariants} className="pt-2">
                 Pengenalan singkat tentang saya dan minat saya.
@@ -234,7 +235,7 @@ function Content() {
                 variants={itemVariants}
                 className="flex justify-start items-start pt-2"
               >
-                <button className="p-2 rounded-xl bg-[#18BC9C] text-[#2C3E50]  hover:bg-[#2C3E50] transition duration-500  hover:text-[#18BC9C]  ">
+                <button className="p-2 rounded-box bg-[#9BA4B4] text-[#14274E]  hover:bg-[#14274E] transition duration-500  hover:text-[#9BA4B4]  ">
                   <Link to="/about">Learn More</Link>
                 </button>
               </motion.div>
@@ -263,8 +264,8 @@ function Content() {
           </div>
         </div>
         {/* Project */}
-        <div id="projects" className=" pb-14 w-full">
-          <div className="w-[90%]  flex flex-col-reverse sm:grid sm:grid-cols-2 mx-auto">
+        <div id="projects" className="pb-14 w-full">
+          <div className="w-[90%] flex flex-col-reverse sm:grid sm:grid-cols-2 mx-auto">
             <motion.div
               variants={containerVariants}
               initial="hidden"
@@ -284,11 +285,11 @@ function Content() {
               </motion.h1>
               <motion.div
                 variants={itemVariants}
-                className="h-1 w-16 bg-[#18BC9C] border-none rounded mb-2"
+                className="h-1 w-16 bg-[#9BA4B4] border-none rounded mb-2"
               ></motion.div>
               <motion.div
                 variants={itemVariants}
-                className="h-1 w-16 bg-[#18BC9C] border-none rounded ml-14"
+                className="h-1 w-16 bg-[#9BA4B4] border-none rounded ml-14"
               ></motion.div>
               <motion.p variants={itemVariants} className="pt-2">
                 Berikut ini beberapa proyek yang telah dan sedang saya kerjakan.
@@ -297,7 +298,7 @@ function Content() {
                 variants={itemVariants}
                 className="flex justify-start items-start pt-2"
               >
-                <button className="p-2 rounded-xl bg-[#18BC9C] text-[#2C3E50]  hover:bg-[#2C3E50] transition duration-500  hover:text-[#18BC9C] ">
+                <button className="p-2 rounded-box bg-[#9BA4B4] text-[#14274E]  hover:bg-[#14274E] transition duration-500  hover:text-[#9BA4B4] ">
                   <Link to="/project">Learn More</Link>
                 </button>
               </motion.div>
@@ -314,9 +315,9 @@ function Content() {
               }}
               className="flex items-center justify-center sm:justify-end sm:items-end"
             >
-              <div className="flex justify-center pl-4 grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all duration-300 ease-in-out">
+              <div className="flex justify-center w-full h-[90%] pl-4 grayscale-0 sm:grayscale sm:hover:grayscale-0 transition-all duration-300 ease-in-out">
                 <img
-                  className="w-[60%]"
+                  className="w-[60%] object-cover"
                   src={Laptop}
                   alt="Deskripsi gambar"
                 />
@@ -325,7 +326,7 @@ function Content() {
           </div>
         </div>
         {/* contact */}
-        <div id="contact" className="pt-10 pb-14 w-full">
+        <div id="contact" className="py-20 w-full">
           <div className="w-[90%] flex flex-col-reverse sm:grid sm:grid-cols-2 mx-auto">
             <motion.div
               variants={containerVariants}
@@ -343,11 +344,11 @@ function Content() {
               </motion.h1>
               <motion.div
                 variants={itemVariants}
-                className="h-1 w-16 bg-[#18BC9C] border-none rounded mb-2"
+                className="h-1 w-16 bg-[#9BA4B4] border-none rounded mb-2"
               ></motion.div>
               <motion.div
                 variants={itemVariants}
-                className="h-1 w-16 bg-[#18BC9C] border-none rounded ml-14"
+                className="h-1 w-16 bg-[#9BA4B4] border-none rounded ml-14"
               ></motion.div>
               <motion.p variants={itemVariants} className="pt-2">
                 Jangan ragu untuk menghubungi saya
@@ -377,7 +378,7 @@ function Content() {
                   }}
                   href="mailto:muhammadrifai.r22mi@plb.ac.id"
                 >
-                  <button className="w-12 h-12 flex items-center justify-center bg-[#18BC9C] text-[#2C3E50] hover:bg-[#2C3E50] transition duration-500 hover:text-[#18BC9C] rounded-full">
+                  <button className="w-12 h-12 flex items-center justify-center bg-[#9BA4B4] text-[#14274E] hover:bg-[#14274E] transition duration-500 hover:text-[#9BA4B4] rounded-full">
                     <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
                   </button>
                 </motion.a>
@@ -396,7 +397,7 @@ function Content() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="w-12 h-12 flex items-center justify-center bg-[#18BC9C] text-[#2C3E50] hover:bg-[#2C3E50] transition duration-500 hover:text-[#18BC9C] rounded-full">
+                  <button className="w-12 h-12 flex items-center justify-center bg-[#9BA4B4] text-[#14274E] hover:bg-[#14274E] transition duration-500 hover:text-[#9BA4B4] rounded-full">
                     <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
                   </button>
                 </motion.a>
@@ -415,7 +416,7 @@ function Content() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="w-12 h-12 flex items-center justify-center bg-[#18BC9C] text-[#2C3E50] hover:bg-[#2C3E50] transition duration-500 hover:text-[#18BC9C] rounded-full">
+                  <button className="w-12 h-12 flex items-center justify-center bg-[#9BA4B4] text-[#14274E] hover:bg-[#14274E] transition duration-500 hover:text-[#9BA4B4] rounded-full">
                     <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5" />
                   </button>
                 </motion.a>

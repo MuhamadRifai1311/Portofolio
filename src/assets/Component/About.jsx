@@ -6,20 +6,13 @@ import { faCircleRight, } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import "../Styles/index.css";
-import Dicoding1 from "../img/sertifikat/dicoding/Belajar Back-End Pemula dengan JavaScript_page-0001.jpg";
-import Dicoding2 from "../img/sertifikat/dicoding/Belajar Dasar AI_page-0001.jpg";
-import Dicoding3 from "../img/sertifikat/dicoding/idcamp-x-dicoding-live-2-automation-fast-track-your-career-with-uipath-and-meet-mvp-uipath-certificate (1)_page-0001.jpg";
-import Dicoding4 from "../img/sertifikat/dicoding/sertifikat_course_256_4444143_221024101406_page-0001.jpg";
-import Myskil1 from "../img/sertifikat/myskill/API Introduction_page-0001.jpg";
-import Myskil2 from "../img/sertifikat/myskill/Back-End Development Introduction_page-0001.jpg";
-import Myskil3 from "../img/sertifikat/myskill/FROND-END DEVELOPMENT INTRODUCTION_page-0001.jpg";
-import Myskil4 from "../img/sertifikat/myskill/internet-introduction_page-0001.jpg";
+
 
 function About() {
-  const Dicoding = [Dicoding1, Dicoding2, Dicoding3, Dicoding4];
-  const MySkill = [Myskil1, Myskil2, Myskil3, Myskil4];
+
   const [previewImg, setPreviewImg] = useState(null);
   const scrollRef = useRef(null);
+
 
   const scrollToSection = () => {
     if (typeof window === "undefined") return;
@@ -84,7 +77,7 @@ function About() {
   return (
     <>
       <div className="relative h-full pt-28 pb-5 ">
-        <div className="text-center space-y-3 pb-64">
+        <div className="text-center space-y-3 pb-64 py-20">
           <motion.h2
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +102,7 @@ function About() {
               stiffness: 50,
               damping: 8,
             }}
-            className="h-1 w-16 bg-[#18BC9C] border-none rounded mx-auto"
+            className="h-1 w-16 bg-[#14274E] border-none rounded mx-auto"
           ></motion.div>
           <motion.p
             initial={{ opacity: 0, y: -100 }}
@@ -138,7 +131,7 @@ function About() {
           >
             <button
               onClick={scrollToSection}
-              className="p-3 text-sm rounded-xl  bg-[#18BC9C] text-[#2C3E50]  hover:bg-[#2C3E50] transition duration-500  hover:text-[#18BC9C]"
+              className="p-3 text-sm rounded-xl  bg-[#14274E] text-[#9BA4B4]  hover:bg-[#9BA4B4] transition duration-500  hover:text-[#14274E]"
             >
               Scroll Down
             </button>
@@ -154,11 +147,11 @@ function About() {
           >
             <motion.div
               variants={itemVariants}
-              className="h-1 w-20 bg-[#18BC9C] border-none rounded ml-20 mb-2"
+              className="h-1 w-20 bg-[#14274E] border-none rounded ml-20 mb-2"
             ></motion.div>
             <motion.div
               variants={itemVariants}
-              className="h-1 w-20 bg-[#18BC9C] border-none rounded ml-14"
+              className="h-1 w-20 bg-[#14274E] border-none rounded ml-14"
             ></motion.div>
             <motion.div variants={itemVariants} className="pl-12 pt-2">
               <h1 className="text-xl sm:text-2xl">Siapakah Saya?</h1>
@@ -296,7 +289,7 @@ function About() {
               }}
               className="flex justify-center items-center flex-col mb-5"
             >
-              <h2 className="text-xl md:text-2xl  font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase ">
+              <h2 className="text-xl md:text-2xl font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase ">
                 Bahasa &amp; Kerangka Kerja
               </h2>
               <p className="text-center tracking-widest md:px-5">
@@ -318,76 +311,20 @@ function About() {
                 type: "tween",
                 ease: "easeInOut",
               }}
-              className="flex justify-center items-center flex-col mb-5"
+              className="flex items-center flex-col mb-5"
             >
               <h2 className="text-xl sm:text-2xl  font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase ">
                 Peralatan
               </h2>
-              <p className="text-center tracking-widest md:px-5">
+              <p className="text-center tracking-widest md:px-5 ">
                 <span className="font-bold">Visual Studio Code</span> {"| "}
                 <span className="font-bold">Laragon</span>{" | "}
-                <span className="font-bold">Ngrok</span>
+                <span className="font-bold">Ngrok</span>{"  |  "}
+                <span className="font-bold">Postman</span>
               </p>
             </motion.div>
           </div>
 
-          <div className="mt-16 w-full">
-            <div className="flex justify-center items-center">
-              <motion.h1
-                initial={{ opacity: 0, x: -200 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0.7,
-                  type: "tween",
-                  ease: "easeInOut",
-                }}
-                className="text-xl sm:text-2xl font-bold mt-3"
-              >
-                Sertifikat
-              </motion.h1>
-            </div>
-
-            <div className="pt-10 flex flex-col gap-3 w-auto">
-              <motion.div
-                initial={{ opacity: 0, x: -200 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0.7,
-                  type: "tween",
-                  ease: "easeInOut",
-                }}
-                className="w-full flex flex-col sm:flex-row justify-around items-center"
-              >
-                {Dicoding.map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    className="w-[75%] sm:w-[20%] pb-2 sm:gap-0 cursor-pointer transition-transform duration-300 hover:scale-110"
-                    onClick={() => setPreviewImg(img)}
-                  />
-                ))}
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: -200 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0.7,
-                  type: "tween",
-                  ease: "easeInOut",
-                }}
-                className="w-full flex flex-col sm:flex-row justify-around items-center"
-              >
-                {MySkill.map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    className="w-[75%] sm:w-[20%] pb-2 sm:gap-2 cursor-pointer transition-transform duration-300 hover:scale-110"
-                    onClick={() => setPreviewImg(img)}
-                  />
-                ))}
-              </motion.div>
-            </div>
-          </div>
           {/* modal Preview */}
           {previewImg && (
             <div
@@ -412,7 +349,7 @@ function About() {
                   stiffness: 50,
                   damping: 8,
                 }}
-                className="h-1 w-20 bg-[#18BC9C] border-none rounded ml-14 mb-3"
+                className="h-1 w-20 bg-[#14274E] border-none rounded ml-14 mb-3"
               ></motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
@@ -423,7 +360,7 @@ function About() {
                   stiffness: 50,
                   damping: 8,
                 }}
-                className="h-1 w-20 bg-[#18BC9C] border-none rounded"
+                className="h-1 w-20 bg-[#14274E] border-none rounded"
               ></motion.div>
               <motion.h1
                 initial={{ opacity: 0, x: -200 }}
@@ -453,9 +390,9 @@ function About() {
               className="flex justify-center items-start flex-col mb-5"
             >
               <section className="grid gap-8">
-                <div className="relative after:absolute after:inset-y-2 after:w-1 after:bg-[#18BC9C] after:left-[-4px] md:after:left-1 lg:after:left-2 xl:after:left-3 grid gap-8 md:gap-12 pl-6 md:pl-8">
+                <div className="relative after:absolute after:inset-y-2 after:w-1 after:bg-[#14274E] after:left-[-4px] md:after:left-1 lg:after:left-2 xl:after:left-3 grid gap-8 md:gap-12 pl-6 md:pl-8">
                   <div className="grid gap-4 relative">
-                    <div className="aspect-square w-5 bg-[#18BC9C] rounded-full absolute left-0 translate-x-[-29.5px] z-10"></div>
+                    <div className="aspect-square w-5 bg-[#14274E] rounded-full absolute left-0 translate-x-[-29.5px] z-10"></div>
                     <div className="font-medium text-base sm:text-lg">
                       3 November 2023 - 20 Desember 2024
                     </div>
@@ -475,18 +412,17 @@ function About() {
                         Activity Diagram.
                       </p>
                       <div className="flex flex-wrap gap-2 mt-4 text-sm">
-                        <div className="bg-[#18BC9C] px-2 py-1 rounded-2xl">
-                          Figma
-                        </div>
-                        <div className="bg-[#18BC9C] px-2 py-1 rounded-2xl">
-                          Laravel
-                        </div>
-                        <div className="bg-[#18BC9C] px-2 py-1 rounded-2xl">
-                          MySql
-                        </div>
-                        <div className="bg-[#18BC9C] px-2 py-1 rounded-2xl">
-                          Ms Visio
-                        </div>
+                        {[
+                          "Figma",
+                          "Laravel",
+                          "MySql",
+                          "Visual Studio Code",
+                          "TailwindCss"
+                        ].map((tech) => (
+                          <div className="bg-[#14274E] text-white px-2 py-1 rounded-2xl" key={tech}>
+                            {tech}
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
